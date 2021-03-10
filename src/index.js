@@ -89,9 +89,9 @@ export default {
         fbq('set', 'autoConfig', false, pixelId); // eslint-disable-line no-undef
       }
 
-      fbq('init', pixelId, advancedMatching); // eslint-disable-line no-undef
-
       fbq.disablePushState = true
+
+      fbq('init', pixelId, advancedMatching); // eslint-disable-line no-undef
 
       initialized = true;
       debug = options.debug;
